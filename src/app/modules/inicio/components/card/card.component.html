@@ -1,0 +1,33 @@
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div *ngFor="let i of info" class="contenido">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <mat-card-title>{{i.nombre}}</mat-card-title>
+            
+          </mat-card-header>
+          <img mat-card-image src="{{i.imagen}}" alt="{{i.alt}}">
+          <mat-card-content>
+            
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
